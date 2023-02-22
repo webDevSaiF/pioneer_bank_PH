@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@400;700&family=Montserrat:wght@600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+:root {
+  --light-green: #75ff4b;
+  --white-color: #ffffff;
+  --dark-navy-blue: #010121;
+}
+body {
+  /* font-family: "Caveat", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  background: var(--dark-navy-blue);
+}
+/* ==CSS INDEX==
+=> 00. REUSABLE CSS
+=> 01. HERO SECTION
+
+*/
+/* == 00. REUSABLE CSS== */
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* == 01. HERO SECTION== */
+.hero-section {
+  height: 90vh;
+}
+.hero-section .main-title {
+  font-size: 64px;
+  text-transform: capitalize;
+  color: transparent;
+  -webkit-text-stroke-color: var(--light-green);
+  -webkit-text-stroke-width: 1px;
+  letter-spacing: 2px;
+  font-family: "Caveat", cursive;
+}
+.hero-section .login-area {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-section .login-area .login-form {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.hero-section .login-area .login-form h4 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--light-green);
+}
+.hero-section .transaction-area {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-section .transaction-area .trans-card {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--white-color);
+  max-width: 300px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  color: var(--white-color);
+}
+.hero-section .transaction-area .trans-card.deposit {
+  background-color: slateblue;
+}
+.hero-section .transaction-area .trans-card.withdraw {
+  background-color: tomato;
+}
+.hero-section .transaction-area .trans-card.balance {
+  background-color: limegreen;
+}
+.hero-section .transaction-area .trans-card h5 {
+  font-size: 22px;
+}
+.hero-section .transaction-area .trans-card h2 {
+  font-size: 48px;
+  font-weight: 800;
+}
+.hero-section .transaction-area .trans-input-box {
+  border-radius: 7px;
+  color: var(--white-color);
+}
+.hero-section .transaction-area .trans-input-box.trans-input-deposit {
+  background: slateblue;
+}
+.hero-section .transaction-area .trans-input-box.trans-input-withdraw {
+  background: tomato;
+}
+.hero-section .transaction-area .trans-input-box h4 {
+  font-size: 22px;
+}
+/* ==FOOTER SECTION== */
+.footer-section {
+  border-top: 1px solid #e8e7e7;
+}
+
+@media screen and (max-width: 769px) {
+  /* == 01. HERO SECTION== */
+  .hero-section {
+    height: 100%;
+  }
+  .hero-section .main-title {
+    font-size: 46px;
+  }
+  .hero-section .trans-input-box button {
+    width: 100% !important;
+  }
+  /* ==MARGIN== */
+  .mb-m-20 {
+    margin-bottom: 20px;
+  }
+  .mb-m-40 {
+    margin-bottom: 40px;
+  }
+}
