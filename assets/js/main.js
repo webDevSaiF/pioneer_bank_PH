@@ -17,7 +17,7 @@ const depositValue = document.querySelector("#deposit-amount");
 depositBtn.addEventListener("click", function () {
   let depositAmount = parseFloat(depositValue.value);
 
-  if (depositAmount) {
+  if (depositAmount > 50) {
     updateSpanText(".total-deposit-balance", depositAmount);
     updateSpanText(".total-balance", depositAmount);
   }
